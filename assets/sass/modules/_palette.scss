@@ -1,0 +1,38 @@
+// Set Descriptive Variables
+$blue:#8ab7c4;
+$blue-deep:#3b494d;
+$blue-contrast:#39474b;
+$blue-pale:#ecf2f3;
+$white:#ffffff;
+$black:#000000;
+$red:#ff002a;
+$gray-deep:#4e525d;
+$gray-contrast:#78746d;
+$gray-pale:#999999;
+$green:#52d68a;
+// Set Functional Variables
+
+// BG
+$form-input-bg:$white;
+$content-bg:$white;
+$body-bg:$white;
+$top-header-bg:$blue-deep;
+$header-bg:$white;
+$box-bg:$white;
+
+$tweet-list-bg:$blue;
+$tweet-list-header-bg:$blue-contrast;
+$tweet-list-item-hover-bg:$blue;
+
+// Text
+$link-color:$blue;
+$link-hover:$blue-deep;
+$content-color:$black;
+$badge-color:$white;
+
+// Border
+$border-color:$gray-pale;
+$form-input-border:$gray-contrast;
+
+// Shadow
+$form-input-shadow:$gray-contrast;

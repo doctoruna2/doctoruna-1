@@ -1,0 +1,11 @@
+body {
+	background: $content-bg;
+}
+.header {
+	background: $header-bg;
+	padding-top: $padding;
+	padding-bottom: $padding;
+}
+a {
+	@include link-colors($link-color, $link-hover, $link-color, $link-color, $black);
+}

@@ -1,0 +1,27 @@
+@include font-face("Castle Bold", font-files("../../fonts/Castle Bold.ttf","../../fonts/Castle Bold.eot"));
+
+body {
+	font-family: $font-family-base;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: "Castle";
+	font: {
+		weight:normal;
+	}
+	small {
+		display: block;
+		color:$gray-pale;
+		font-size:13px;
+		margin: $margin / 2  0;
+		text-transform: lowercase;
+	}
+}
+p {
+	margin: 0;
+}

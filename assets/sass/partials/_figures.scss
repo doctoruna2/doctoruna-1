@@ -1,0 +1,170 @@
+/* HEADER */
+.top-header,
+.top-footer,
+.bottom-footer {
+	background: $top-header-bg;
+	color:$white;
+}
+.top-header {
+	font-size:13px;
+	padding: $padding 0;
+	span {
+		line-height: 30px;
+	}
+}
+.banner {
+	background: url("../images/hd-bg.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	min-height: $height * 2;
+	.nav-menu {
+		padding-top: 25px;
+		a {
+			color:$blue-deep;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		li {
+			border-bottom: 1px solid $blue-pale;
+			border-top: 1px solid $blue-pale;
+			padding:$padding;
+			margin-right: $margin;
+			&:hover {
+				background: $blue-pale;
+				border-bottom: none;
+				-webkit-transition: all 0.3s ease-out;
+          		transition: all 0.3s ease-out;
+			}
+		}
+		.login-links {
+			margin-left: $margin * 6;
+		}
+		.brand {
+			position: relative;	
+			span {
+				position: absolute;
+				top: 20px;
+				left: 30px;
+				font-size: 12px;
+				color:$blue-pale;
+			}
+		}
+	}
+	.banner-element {
+		margin-top: 100px;
+		line-height: 30px;
+		h1 {
+			color:$blue-deep;
+			text-transform: uppercase;
+		}
+		h3 {
+			color:#89b7c4;
+		}
+	}
+}
+
+
+/* SECTIONS */
+.section {
+	.section-header {
+		color:$blue-deep;
+		margin: $margin * 3 0;
+		text-transform: uppercase;
+	}
+	.box {
+		padding: $padding * 5 0;
+		h4 {
+			color:$blue-deep;
+			margin:$margin 0;
+		}
+		p {
+			font-size:13px;
+			width: 75%;
+			display: inline-block;
+		}
+		&:hover {
+			background: $blue-pale;
+		}
+	}
+	.doc-info {
+		background: $white;
+		padding: $padding $padding * 2;
+		min-height: $height - 65px;
+	}
+	.new-info {
+		h4 {
+			margin: $margin * 2 0;
+		}
+		h6 {
+			color:$gray-contrast;
+			font-size:12px;
+		}
+		p {
+			font-size:13px;
+			color:$gray-contrast;
+		}
+	}
+	.section-nav {
+		margin:$margin * 3 0;
+	}
+}
+.section.sections {
+	padding-top: $padding * 3;
+}
+.testmonials  {
+	.patient-testmonials, 
+	.doctor-testmonials {
+		padding: $padding * 3 0;	
+	}
+	.doctor-testmonials {
+		p {
+			font-size:13px;
+			margin: $margin $margin * 5;
+		}
+	}
+	
+}
+.section:nth-child(even) {
+    background: $blue-pale;
+}
+.doctor-testmonials {
+	background: $white;
+}
+/* FOOTER */
+footer {
+	.top-footer {
+		padding: $padding * 2 0;
+		img.logo {
+			padding-top: 15px;
+		}
+		.download-app {
+			@include padding(10px,10px,10px,10px);
+			@include border-radius(3px);
+			@include border-solid($white);
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	.footer-content {
+		padding: $padding * 3 0;
+		h4 {
+			margin-bottom: 20px;
+		}
+		.award {
+			margin: $margin 0;
+			display: inline-block;
+			p {
+				width: 50%;
+			}
+		}
+	}
+	.bottom-footer {
+		padding: $padding 0;
+		font-size:13px;
+	}
+}

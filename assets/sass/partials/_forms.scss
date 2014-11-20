@@ -1,0 +1,74 @@
+a {
+	&:focus {
+		outline:none;
+	}
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li {
+		@include margin(0,0,0,0);
+	}
+}
+ul.list-inline {
+	@include margin(0,0,0,0);
+}
+form {
+	input,
+	select {
+		border: none;
+		border-bottom: 1px solid $form-input-border;
+		padding: $padding;
+	}
+	.btn {
+		background: $form-input-bg;
+		border: 1px solid $form-input-border;
+		padding: $padding $padding*2;
+		@include box-shadow(rgba(darken($form-input-shadow, 3%), 1) 0 1px 0 0);
+	}
+}
+
+.btn.button {
+	@include border-radius(0);
+	background: $green;
+	border:none;
+	padding: $padding $padding * 2;
+}
+.btn.button.btn-sml {
+	padding: $padding / 2 $padding;
+	font-size:13px;
+}
+.search-form {
+	position: absolute;
+	bottom: 0;
+	.character {
+		position: absolute;
+		right: 0;
+		bottom: -80px;
+	}
+	h6 {
+		background: $blue-deep;
+		width: 20%;
+		padding: $padding $padding * 2;
+		color:$white;
+		text-transform: uppercase;
+		font-size:16px;
+		margin-bottom: 7px;
+	}
+	.form-container {
+		background: $blue;
+		padding: $padding * 2;
+		.form-group {
+			margin-bottom: 25px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		input,
+		select {
+			margin-right: 15px;
+		}
+	}
+}

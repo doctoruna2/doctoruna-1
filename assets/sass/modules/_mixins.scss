@@ -1,0 +1,31 @@
+// ========== Common Mixins ========== //
+
+@mixin border($border-size, $border-style, $border-color) {
+	border:$border-size $border-style $border-color;
+}
+@mixin border-solid($border-color) {
+	border:1px solid $border-color;
+}
+
+// margin
+@mixin margin ($margin-top,$margin-right,$margin-bottom,$margin-left) {
+	margin:$margin-top $margin-right $margin-bottom $margin-left;
+}
+// padding
+@mixin padding ($padding-top,$padding-right,$padding-bottom,$padding-left) {
+	padding:$padding-top $padding-right $padding-bottom $padding-left;
+}
+
+// border
+@mixin border-right ($border-color) {
+	border-right : 1px solid $border-color;
+}
+@mixin border-left ($border-color) {
+	border-left : 1px solid $border-color;
+}
+@mixin border-top ($border-color) {
+	border-top : 1px solid $border-color;
+}
+@mixin border-bottom ($border-color) {
+	border-bottom : 1px solid $border-color;
+}
